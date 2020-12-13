@@ -21,7 +21,7 @@
 			<td align="center"><b><%=log%></b></td>
 			<td align="center"><b><a href="hospital_doctor.jsp">전체 의사</b></td>
 			<td align="center"><b><a href="hospital_nurse.jsp">전체 간호사</b></td>
-            <td align="center"><b><a href="delete.jsp">담당 환자</b></td>
+            <td align="center"><b><a href="hospital_patient.jsp">담당 환자</b></td>
             <td align="center"><b><a href="hospital_user_update.jsp">사용자 정보 수정</b></td>
 		</tr>
 	</table>

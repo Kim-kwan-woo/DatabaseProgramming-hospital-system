@@ -8,7 +8,7 @@
 	<% if(session_id != null) { %>
 		<tr>
             <br>
-            <td align="center"><%=session_name%>님 방문을 환영합니다 (<%=session_job%>)</td>
+            <td align="center"><%=session_name%>(<%=session_id%>)님 방문을 환영합니다 (<%=session_job%>)</td>
         </br>
 		</tr>	
 	<% } else {	%>

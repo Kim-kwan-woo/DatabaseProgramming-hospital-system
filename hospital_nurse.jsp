@@ -29,7 +29,6 @@
 			<th>성별</th>
 			<th>전화번호</th>
             <th>이메일</th>
-            <th>담당업무</th>
             <th>부서번호</th>
 		</tr>
 		<br>
@@ -46,7 +45,6 @@
 			<td align="center"><%=nr.getSex()%></td>
             <td align="center"><%=nr.getPhone()%></td>
             <td align="center"><%=nr.getEmail()%></td>
-            <td align="center"><%=nr.getAssignedWork()%></td>
             <td align="center"><%=nr.getDnum()%></td>
 			<%
                 }

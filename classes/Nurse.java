@@ -6,7 +6,6 @@ public class Nurse {
 	private String sex;
 	private String phone;
 	private String email;
-	private String assignedwork;
 	private int dnum;
 	private String password;
 
@@ -16,7 +15,6 @@ public class Nurse {
 		sex = null;
 		phone = null;
 		email = null;
-		assignedwork = null;
 		dnum = 0;
 		password = null;
 	}
@@ -39,10 +37,6 @@ public class Nurse {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public void setAssignedWork(String assignedwork) {
-		this.assignedwork = assignedwork;
 	}
 
 	public void setDnum(int dnum) {
@@ -73,10 +67,6 @@ public class Nurse {
 		return email;
 	}
 	
-	public String getAssignedWork() {
-		return assignedwork;
-	}
-
 	public int getDnum() {
 		return dnum;
 	}

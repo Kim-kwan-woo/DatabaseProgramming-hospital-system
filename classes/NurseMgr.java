@@ -81,7 +81,7 @@ public class NurseMgr {
 		try {
 			conn = pool.getConnection();
 
-			String mySQL = "select nurseid, name, sex, phone, email, assignedwork, dnum from nurse where dnum=?";
+			String mySQL = "select nurseid, name, sex, phone, email, dnum from nurse where dnum=?";
 			pstmt = conn.prepareStatement(mySQL);
 			pstmt.setInt(1, dnumber);
 			rs = pstmt.executeQuery();
@@ -93,7 +93,6 @@ public class NurseMgr {
 				nr.setSex(rs.getString("sex"));
 				nr.setPhone(rs.getString("phone"));
 				nr.setEmail(rs.getString("email"));
-				nr.setAssignedWork(rs.getString("assignedwork"));
 				nr.setDnum(rs.getInt("dnum"));
 				vecList.add(nr);
 			}
