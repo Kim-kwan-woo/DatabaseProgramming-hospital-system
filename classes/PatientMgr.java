@@ -116,4 +116,65 @@ public class PatientMgr {
 		}
 		return vecList;
 	}
+
+	/*insert new patient*/
+	public String insertPatient(String p_id, String p_name, String p_sex, String p_phone, String p_address, String p_email, String p_doctorid, String p_hospitalization, String p_nurseid, String t_detail) {
+		Connection conn = null;
+		CallableStatement cstmt = null;
+		String Result = null;
+		try {
+			conn = pool.getConnection();
+
+			cstmt = conn.prepareCall("{call InsertPatient(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}");
+			cstmt.setString(1, p_id);
+			cstmt.setString(2, p_name);
+			cstmt.setString(3, p_sex);
+			cstmt.setString(4, p_phone);
+			cstmt.setString(5, p_address);
+			cstmt.setString(6, p_email);
+			cstmt.setString(7, p_doctorid);
+			cstmt.setString(8, p_hospitalization);
+			cstmt.setString(9, p_nurseid);
+			cstmt.setString(10, t_detail);
+			cstmt.registerOutParameter(11, java.sql.Types.VARCHAR);
+			cstmt.execute();
+			Result = cstmt.getString(11);
+			cstmt.close();
+			conn.close();
+			
+		} catch (Exception ex) {
+			System.out.println("Exception" + ex);
+		}
+        
+		return Result;
+	}
+
+	/*update patient information*/
+	public String updatePatient(String p_id, String p_name, String p_sex, String p_phone, String p_address, String p_email, String p_hospitalization) {
+		Connection conn = null;
+		CallableStatement cstmt = null;
+		String Result = null;
+		try {
+			conn = pool.getConnection();
+
+			cstmt = conn.prepareCall("{call UpdatePatient(?, ?, ?, ?, ?, ?, ?, ?)}");
+			cstmt.setString(1, p_id);
+			cstmt.setString(2, p_name);
+			cstmt.setString(3, p_sex);
+			cstmt.setString(4, p_phone);
+			cstmt.setString(5, p_address);
+			cstmt.setString(6, p_email);
+			cstmt.setString(7, p_hospitalization);
+			cstmt.registerOutParameter(8, java.sql.Types.VARCHAR);
+			cstmt.execute();
+			Result = cstmt.getString(8);
+			cstmt.close();
+			conn.close();
+			
+		} catch (Exception ex) {
+			System.out.println("Exception" + ex);
+		}
+        
+		return Result;
+	}
 }
