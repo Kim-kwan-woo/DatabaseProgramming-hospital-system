@@ -27,6 +27,7 @@ public class NurseMgr {
 		}
 	}
 
+	/*find maximum dnum*/
 	public int getMaxDnum() {
 		int maxDnum = 0;
 		Connection conn = null;
@@ -49,6 +50,7 @@ public class NurseMgr {
 		return maxDnum;
 	}
 
+	/*get department name*/
 	public String getDname(int dnumber) {
 		String dname = null;
 		Connection conn = null;
@@ -72,6 +74,7 @@ public class NurseMgr {
 		return dname;
 	}
 
+	/*get all nurse list*/
 	public Vector getNurseList(int dnumber) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -103,5 +106,37 @@ public class NurseMgr {
 			System.out.println("Exception" + ex);
 		}
 		return vecList;
+	}
+
+	/*insert new nurse*/
+	public String insertNurse(String n_id, String n_name, String n_sex, String n_phone, String n_email, String n_password, int n_dnum) {
+		Connection conn = null;
+		CallableStatement cstmt = null;
+		String Result = null;
+		try {
+			conn = pool.getConnection();
+
+			cstmt = conn.prepareCall("{call InsertNurse(?, ?, ?, ?, ?, ?, ?, ?)}");
+			cstmt.setString(1, n_id);
+			cstmt.setString(2, n_name);
+			cstmt.setString(3, n_sex);
+			cstmt.setString(4, n_phone);
+			cstmt.setString(5, n_email);
+			cstmt.setString(6, n_password);
+			cstmt.setInt(7, n_dnum);
+			cstmt.registerOutParameter(8, java.sql.Types.VARCHAR);
+			cstmt.execute();
+			Result = cstmt.getString(8);
+			cstmt.close();
+			conn.close();
+			
+		} catch (SQLException ex) {
+			if (ex.getErrorCode() == 20002) Result="-20002";
+        			else if (ex.getErrorCode() == 20003) Result="-20003";
+        			else if (ex.getErrorCode() == 20004) Result="-20004";
+			else Result="20006";
+		}
+        
+		return Result;
 	}
 }

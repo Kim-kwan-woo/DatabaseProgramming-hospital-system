@@ -12,7 +12,11 @@
 	<%
 		if (session_id == null)
 			response.sendRedirect("hospital_login.jsp");
+
+		if(session_job == "doctor"){
 	%>
+			<h4 align="center"><a href="hospital_nurse_insert.jsp?d_id=<%=session_id%>">신입 간호사 등록</a></h4>
+	<% } %>
     <jsp:useBean id="nurseMgr" class="nurseBean.NurseMgr" />
     <%
         int maxDnum = nurseMgr.getMaxDnum();
@@ -21,7 +25,6 @@
             String currentDname = nurseMgr.getDname(currentDnum);
     %>
 	<table width="70%" align="center" border>
-        <br>
         <h4 align="center"><%=currentDname%></h4>
 		<tr bgcolor="#ffbd99">
 			<th>간호사ID</th>

@@ -35,7 +35,7 @@
 			<td align="center"><%=ch.getTreatmentDate()%></td>
             <td align="center">
                 <a href="hospital_chart_detail.jsp?p_id=<%= p_id %>&d_id=<%= d_id %>&t_date=<%= ch.getTreatmentDate() %>">진료 내용 보기</a>
-                </td>>
+                </td>
 			<%
                 }
 			%>
