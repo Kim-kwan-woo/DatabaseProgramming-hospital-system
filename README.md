@@ -58,15 +58,15 @@
 ## Screenshots
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/62555935/102987059-2463f780-4555-11eb-9b04-66757de30f8e.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987119-39408b00-4555-11eb-8644-93eeec42425e.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987224-5ffec180-4555-11eb-960e-5dc0ca6fffa8.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987319-7c026300-4555-11eb-9da5-a04d616d7456.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987410-989e9b00-4555-11eb-982d-38900292219c.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987477-b4a23c80-4555-11eb-81e3-3317b0bd231a.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987522-cb489380-4555-11eb-8685-1149ce4b95b2.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987594-f03d0680-4555-11eb-8a92-eb5276fc449e.PNG", height="400", width="500"/>
-<img src="https://user-images.githubusercontent.com/62555935/102987654-08ad2100-4556-11eb-9e66-f6720fa99139.PNG", height="400", width="500"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987059-2463f780-4555-11eb-9b04-66757de30f8e.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987119-39408b00-4555-11eb-8644-93eeec42425e.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987224-5ffec180-4555-11eb-960e-5dc0ca6fffa8.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987319-7c026300-4555-11eb-9da5-a04d616d7456.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987410-989e9b00-4555-11eb-982d-38900292219c.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987477-b4a23c80-4555-11eb-81e3-3317b0bd231a.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987522-cb489380-4555-11eb-8685-1149ce4b95b2.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987594-f03d0680-4555-11eb-8a92-eb5276fc449e.PNG", width="400"/>
+<img src="https://user-images.githubusercontent.com/62555935/102987654-08ad2100-4556-11eb-9e66-f6720fa99139.PNG", width="400"/>
 </p>
 
 ## Usage
