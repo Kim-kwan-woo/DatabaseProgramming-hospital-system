@@ -31,11 +31,15 @@
 
 ### Logical Model
 
+<p>
 <img src="https://user-images.githubusercontent.com/62555935/102986571-65a7d780-4554-11eb-8af6-f177a3bfac34.PNG", width="300"/>
+</p>
 
 ### Physical Model
 
+<p>
 <img src="https://user-images.githubusercontent.com/62555935/102986703-95ef7600-4554-11eb-98d6-4208f4fdd4d3.PNG", width="300"/>
+</p>
 
 ## Description
 
@@ -53,6 +57,7 @@
 
 ## Screenshots
 
+<p>
 <img src="https://user-images.githubusercontent.com/62555935/102987059-2463f780-4555-11eb-9b04-66757de30f8e.PNG", width="300"/>
 <img src="https://user-images.githubusercontent.com/62555935/102987119-39408b00-4555-11eb-8644-93eeec42425e.PNG", width="300"/>
 <img src="https://user-images.githubusercontent.com/62555935/102987224-5ffec180-4555-11eb-960e-5dc0ca6fffa8.PNG", width="300"/>
@@ -62,6 +67,7 @@
 <img src="https://user-images.githubusercontent.com/62555935/102987522-cb489380-4555-11eb-8685-1149ce4b95b2.PNG", width="300"/>
 <img src="https://user-images.githubusercontent.com/62555935/102987594-f03d0680-4555-11eb-8a92-eb5276fc449e.PNG", width="300"/>
 <img src="https://user-images.githubusercontent.com/62555935/102987654-08ad2100-4556-11eb-9e66-f6720fa99139.PNG", width="300"/>
+</p>
 
 ## Usage
 
