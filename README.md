@@ -1,5 +1,5 @@
 <h1 align="center">
-  Hospital Manage System
+  Hospital Management System
 </h1>
 <h3 align="center">
   2020-2 데이터베이스 프로그래밍 프로젝트
@@ -76,7 +76,7 @@
 1. Clone this repository
 
 ```terminal
-$ git clone https://github.com/seunghwanly/commitSyndrome.git
+$ git clone https://github.com/Kim-kwan-woo/DatabaseProgramming-hospital-system.git
 ```
 
 2. Link Oracle with Tomcat 8.5 and Java 1.8.0_271
