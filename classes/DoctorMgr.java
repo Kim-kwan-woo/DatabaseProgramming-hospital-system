@@ -27,7 +27,7 @@ public class DoctorMgr {
 		}
 	}
 
-	/*find maximum dnum*/
+	/*find maximum dnum(department number)*/
 	public int getMaxDnum() {
 		int maxDnum = 0;
 		Connection conn = null;
@@ -49,7 +49,7 @@ public class DoctorMgr {
 		return maxDnum;
 	}
 
-	/*get doctorid's department number */
+	/*get doctorid's department number*/
 	public int getDnumber(String d_id) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -76,7 +76,7 @@ public class DoctorMgr {
 		return dnumber;
 	}
 
-	/*check input doctorid is head doctorid*/
+	/*check input doctorid is head doctorid in he's department*/
 	public boolean isHeadDoctor(int dnum, String d_id) {
 		String doctorID = "";
 		boolean check = false;
@@ -104,7 +104,7 @@ public class DoctorMgr {
 		return check;
 	}
 
-	/*get department name*/
+	/*get department name from dnumber(department number)*/
 	public String getDname(int dnumber) {
 		String dname = null;
 		Connection conn = null;
@@ -185,10 +185,10 @@ public class DoctorMgr {
 			conn.close();
 			
 		} catch (SQLException ex) {
-			if (ex.getErrorCode() == 20002) Result="-20002";
-        			else if (ex.getErrorCode() == 20003) Result="-20003";
-        			else if (ex.getErrorCode() == 20004) Result="-20004";
-			else Result="20006";
+			if (ex.getErrorCode() == 20002) Result="-20002"; //short password
+        			else if (ex.getErrorCode() == 20003) Result="-20003"; //spacing word
+        			else if (ex.getErrorCode() == 20004) Result="-20004"; //wrong sex input
+			else Result="20006"; //other error
 		}
         
 		return Result;
